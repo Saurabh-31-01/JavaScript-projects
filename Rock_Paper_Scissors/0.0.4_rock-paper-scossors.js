@@ -43,28 +43,28 @@ function playGame(playerMove) {
 
   let result = "";
 
-  if (playerMove === "Scissors") {
+  if (playerMove === "scissors") {
     if (comMove === "rock") {
       result = "you lose";
-    } else if (comMove === "Paper") {
+    } else if (comMove === "paper") {
       result = "you win";
-    } else if (comMove === "Scissors") {
+    } else if (comMove === "scissors") {
       result = "Tie";
     }
-  } else if (playerMove === "Paper") {
+  } else if (playerMove === "paper") {
     if (comMove === "rock") {
       result = "you win";
-    } else if (comMove === "Paper") {
+    } else if (comMove === "paper") {
       result = "Tie";
-    } else if (comMove === "Scissors") {
+    } else if (comMove === "scissors") {
       result = "you lose";
     }
   } else {
     if (comMove === "rock") {
       result = "Tie";
-    } else if (comMove === "Paper") {
+    } else if (comMove === "paper") {
       result = "you lose";
-    } else if (comMove === "Scissors") {
+    } else if (comMove === "scissors") {
       result = "you win";
     }
   }
@@ -105,9 +105,9 @@ function pickComputerMove() {
   if (num >= 0 && num < 1 / 3) {
     comMove = "rock";
   } else if (num >= 1 / 3 && num < 2 / 3) {
-    comMove = "Paper";
+    comMove = "paper";
   } else if (num >= 2 / 3 && num < 1) {
-    comMove = "Scissors";
+    comMove = "scissors";
   }
   return comMove;
 }
