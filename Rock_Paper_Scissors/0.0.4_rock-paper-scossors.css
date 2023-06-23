@@ -41,3 +41,11 @@ body {
   padding: 8px 15px;
   cursor: pointer;
 }
+
+.style-yes {
+  border: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}

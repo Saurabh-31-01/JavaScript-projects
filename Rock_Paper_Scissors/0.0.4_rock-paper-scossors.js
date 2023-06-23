@@ -35,7 +35,6 @@ function autoPlay() {
     clearInterval(intervalId);
     isAutoplaying = false;
   }
-
 }
 
 function playGame(playerMove) {
@@ -111,3 +110,30 @@ function pickComputerMove() {
   }
   return comMove;
 }
+
+let resetElement = document.getElementById('reset');
+
+resetElement.addEventListener('click', () => {
+  let divreset = document.querySelector('.js-add-reset');
+
+  divreset.innerHTML = `<p>Are you sure you want to Reset ?  
+  <button class = "yes style-yes" >Yes</button>
+  <button class = "no style-yes">No</button>
+  </p>`;
+
+  let a = document.querySelector('.yes');
+  let b = document.querySelector('.no');
+
+  a.addEventListener('click', () => {
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+    divreset.innerHTML = '';
+  });
+
+  b.addEventListener('click', () => {
+    divreset.innerHTML = '';
+  });
+});
