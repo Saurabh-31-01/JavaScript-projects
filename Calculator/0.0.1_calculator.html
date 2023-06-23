@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+  <div>
+    <p class="display" style="margin-left: 30px"></p>
+
+    <button onclick="
+            calculator('1');
+            f1();
+        " class="firstButton">
+      1
+    </button>
+    <button onclick="
+            calculator('2');
+            f1();
+        " class="button">
+      2
+    </button>
+
+    <button onclick="
+            calculator('3');
+            f1();
+        " class="button">
+      3
+    </button>
+
+    <button onclick="
+            calculator(' * ');
+            f1();
+        " class="operator">
+      x
+    </button>
+  </div>
+
+  <div>
+    <button onclick="
+            calculator('4');
+            f1();
+        " class="firstButton" style="margin-top: 15px">
+      4
+    </button>
+
+    <button onclick="
+            calculator('5');
+            f1();
+        " class="button" style="margin-top: 15px">
+      5
+    </button>
+
+    <button onclick="
+            calculator('6');
+            f1();
+        " class="button" style="margin-top: 15px">
+      6
+    </button>
+
+    <button onclick="
+            calculator(' + ');
+            f1();
+        " class="operator" style="margin-top: 15px">
+      +
+    </button>
+  </div>
+
+  <div>
+    <button onclick="
+            calculator('7');
+            f1();
+        " class="firstButton" style="margin-top: 15px">
+      7
+    </button>
+
+    <button onclick="
+            calculator('8');
+            f1();
+        " class="button" style="margin-top: 15px">
+      8
+    </button>
+
+    <button onclick="
+            calculator('9');
+            f1();
+        " class="button" style="margin-top: 15px">
+      9
+    </button>
+
+    <button onclick="
+            calculator(' - ');
+            f1();
+        " class="operator" style="margin-top: 15px; padding-left: 8px; padding-right: 8px">
+      -
+    </button>
+  </div>
+  <div>
+    <button onclick="
+            calculator('e');
+            f1();
+        " class="firstButton" style="margin-top: 15px">
+      e
+    </button>
+
+    <button onclick="
+            calculator('0');
+            f1();
+        " class="button" style="margin-top: 15px">
+      0
+    </button>
+
+    <button onclick="
+            calculator('.');
+            f1();
+        " class="button" style="margin-top: 15px; padding-left: 7px; padding-right: 7px">
+      .
+    </button>
+
+    <button onclick="
+            calculator(' = ');
+            f1();
+        " class="operator" style="margin-top: 15px">
+      =
+    </button>
+  </div>
+
+  <button class="diff" style="margin-top: 10px; padding-left: 50px; padding-right: 50px" onclick="
+            calculator('');
+            f1();
+        ">
+    clear
+  </button>
+  <script src="calculator.js">
+  </script>
+</body>
+
+</html>

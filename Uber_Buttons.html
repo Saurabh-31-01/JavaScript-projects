@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Uber</title>
+    <style>
+        .req {
+            background-color: black;
+            color: white;
+
+            margin-left: 50px;
+        }
+
+        .schedule {
+            background-color: rgb(230, 230, 230);
+        }
+
+        .same {
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 13px 20px;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="req same">Request now</button>
+
+    <button class="schedule same">Schedule for later</button>
+
+    <button id="val" class="js-button schedule same">Test</button>
+
+    <script>
+        let a = document.getElementById("val").classList.contains("js-button");
+        console.log(a);
+
+    </script>
+</body>
+
+</html>

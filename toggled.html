@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .is-toggled {
+            margin-left: 30px;
+            padding: 10px 15px;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .is-not {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="one is-toggled" onclick="fun('.one')">Gaming</button>
+
+    <button class="two is-toggled" onclick="fun('.two')">Music</button>
+
+    <button class="three is-toggled" onclick="fun('.three')">Tech</button>
+
+    <script>
+
+        function fun(select) {
+            let button = document.querySelector(select);
+
+            if (!button.classList.contains("is-not")) {
+
+                turnOffPrevious();
+                button.classList.add("is-not");
+            } else {
+                button.classList.remove('is-toggled');
+            }
+        }
+
+        function turnOffPrevious() {
+            const previous = document.querySelector('.is-not');
+
+            if (previous) {
+                previous.classList.remove("is-not");
+            }
+
+        }
+    </script>
+</body>
+
+</html>

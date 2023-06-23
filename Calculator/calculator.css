@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+}
+
+.firstButton {
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border: none;
+    margin-left: 30px;
+}
+
+.button {
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border: none;
+    margin-left: 10px;
+
+}
+
+.operator {
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    color: white;
+    border: none;
+    background-color: orange;
+    margin-left: 10px;
+}
+
+.display {
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+}
+
+.diff {
+    border: none;
+    margin-left: 30px;
+    height: 60px;
+    width: 278px;
+    border-radius: 100px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <button
+      onclick="
+    
+        flip('Heads');
+    "
+    >
+      Heads
+    </button>
+    <button
+      onclick="
+        flip('Tails');
+    "
+    >
+      Tails
+    </button>
+
+    <p class="coin"></p>
+
+    <input
+      placeholder="Enter your name"
+      id="ok"
+      onkeydown="
+            keyPress(event);
+        "
+    />
+    <button
+      onclick="
+        getName();    
+    "
+    >
+      Submit
+    </button>
+
+    <p class="name"></p>
+    <script>
+      function keyPress(emp) {
+        if (emp.key === "Enter") {
+          getName();
+        }
+      }
+
+      function getName() {
+        let val = document.getElementById("ok");
+
+        document.querySelector(
+          ".name"
+        ).innerHTML = `your name is : ${val.value}`;
+      }
+
+      function flip(val) {
+        let go = document.querySelector(".coin");
+        if (val === "Heads") {
+          go.innerHTML = `You chose : ${val}`;
+        } else {
+          go.innerHTML = `You chose : ${val}`;
+        }
+      }
+    </script>
+  </body>
+</html>

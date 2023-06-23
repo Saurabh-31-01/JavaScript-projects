@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Coin Flip</title>
+  </head>
+  <body>
+    <p>Guess the Flip</p>
+    <button
+      onclick="
+        let randomdig = Math.random();
+
+        let result = randomdig <= 0.5 ? 'Head' : 'Tails';
+
+        let guess = result === 'Head' ? true : false;
+
+        guess ? alert(`It's ${result}. your guess is correct`) : alert(`It's ${result}. your guess is incorrect`);
+
+    "
+    >
+      Head
+    </button>
+
+    <button
+      onclick="
+        let r = Math.random();
+
+        let ans = r <= 0.5 ? 'Head' : 'Tail';
+
+        let gues = ans === 'Tail' ? true : false;
+
+        gues ? alert(`It's ${ans}. your guess is correct`) : alert(`It's ${ans}. your guess is incorrect`);
+    
+    "
+    >
+      Tail
+    </button>
+  </body>
+</html>

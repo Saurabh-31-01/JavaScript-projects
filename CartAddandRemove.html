@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    .myButtonClass {
+      margin-left: 40px;
+    }
+
+    .button {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="
+        if(quantity >= 10){
+          alert('The cart is full');
+        }else{
+          quantity++;
+        }
+        console.log(`Quantity :- ${quantity}`);
+    " class="myButtonClass">
+    Add To Cart
+  </button>
+
+  <button onclick="
+        quantity = 0;
+        console.log(`Quantity :- ${quantity}`);
+    " class="button">
+    Reset
+  </button>
+
+  <button onclick="
+
+            if(quantity <= 0){
+                quantity = 0;
+                alert(`Not enough Items`);
+            }else{
+                quantity--;
+            }
+            
+        console.log(`Quantity :- ${quantity}`);
+    " class="button">
+    remove
+  </button>
+
+  <script>
+    let quantity = 0;
+
+      // let message = 0 && "hello";
+      // console.log(message);
+
+      // let curr = 0 || "RUPEES";
+      // console.log(curr);
+      // let name = "saurabh";
+      // console.log(`My name is ${name}`);
+
+      // let cost = 5 + 3 + 9;
+
+      // console.log(`Cost of food: $${cost}`);
+
+      // let total =  cost  + (cost / 10);
+
+      // console.log(`Tas(10%):$${total}`);
+  </script>
+</body>
+
+</html>

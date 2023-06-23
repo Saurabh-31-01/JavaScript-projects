@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .firstButton{
+            margin-left: 30px;
+        }
+
+        .button{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="
+            cal += '1';
+            console.log(cal);
+        " class="firstButton">
+            1
+        </button>
+        <button onclick="
+            cal += '2';
+            console.log(cal);
+        " class="button">
+            2
+        </button>
+
+        <button onclick="
+            cal += '3';
+            console.log(cal);
+        " class ="button">
+            3
+        </button>
+
+        <button onclick="
+            cal += ' * ';
+            console.log(cal);
+        " class = "button">
+            x
+        </button>
+    </div>
+
+    <div>
+        <button onclick="
+            cal += '4';
+            console.log(cal);
+        " class="firstButton" style="margin-top: 15px;">
+            4
+        </button>
+
+        <button onclick="
+            cal += '5';
+            console.log(cal);
+        " class="button" style="margin-top: 15px;">
+            5
+        </button>
+
+        <button onclick="
+            cal += '6';
+            console.log(cal);
+        " class="button" style="margin-top: 15px;">
+            6
+        </button>
+
+        <button onclick="
+            cal += ' + ';
+            console.log(cal);
+        " class="button" style="margin-top: 15px;">
+            +
+        </button>
+    </div>
+
+    <div>
+        <button onclick="
+            cal += '7';
+            console.log(cal);
+        " class="firstButton" style="margin-top: 15px;">
+            7
+        </button>
+
+        <button onclick="
+            cal += '8';
+            console.log(cal);
+        " class="button" style="margin-top: 15px;">
+            8
+        </button>
+
+        <button onclick="
+            cal += '9';
+            console.log(cal);
+        " class="button" style="margin-top: 15px;">
+            9
+        </button>
+
+        <button onclick="
+            cal += ' - ';
+            console.log(cal);
+        " class="button" style="margin-top: 15px; padding-left: 8px; padding-right: 8px;">
+            -
+        </button>
+    </div>
+    <div>
+        <button onclick="
+            cal += 'e';
+            console.log(cal);
+        " class="firstButton" style="margin-top: 15px;">
+            e
+        </button>
+
+        <button onclick="
+            cal += '0';
+            console.log(cal);
+        " class="button" style="margin-top: 15px;">
+            0
+        </button>
+
+        <button onclick="
+            cal += '.';
+            console.log(cal);
+        " class="button" style="margin-top: 15px; padding-left: 7px;
+        padding-right: 7px;">
+            .
+        </button>
+
+        <button onclick="
+            cal = eval(cal);
+            console.log(cal);
+        " class="button" style="margin-top: 15px;">
+            =
+        </button>
+    </div>
+
+    <button class="firstButton"
+        style="margin-top: 10px; padding-left: 50px;
+        padding-right: 50px;"
+
+        onclick = "
+            cal = '';
+        "
+    >clear</button>
+    <script>
+        let cal = '';
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays And Loops</title>
+</head>
+
+<body>
+    <script>
+
+        const myArray = [10, 20, 30];
+
+        let temp = myArray[0];
+        myArray[0] = myArray[myArray.length - 1];
+        myArray[myArray.length - 1] = temp;
+
+        console.log(myArray);
+
+    </script>
+</body>
+
+</html>
