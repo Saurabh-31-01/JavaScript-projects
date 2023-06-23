@@ -1,4 +1,4 @@
-let cal = "";
+let cal = " ";
 
 function calculator(val) {
     switch (val) {
